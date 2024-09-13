@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #dcf4f7;
+    margin: 0;
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; 
+}
+
+ul.with-bullets {
+    list-style-type: disc; /* Show bullet points */
+    padding-left: 0; /* Default padding for bullet points */
+    margin: 0; 
+    margin: 5px; 
+}
+
+li {
+    font-size: 1.5vw; /* Match the font size to your existing text */
+    color: #333; /* Match the color to your existing text */
+    margin: 10px 0; /* Add some spacing between list items */
+}
+
+.nameimage {
+    width: 28vw; /* Adjust width as needed */
+    height: 20vw; /* Maintain aspect ratio */
+    position: absolute; /* Positioning context within the rectangle */
+    top: 18vw; /* Adjust top position */
+    left: 50vw; 
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.rectangle {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-right: 2%;
+}
+
+.centered-text {
+    font-size: 1.5vw;
+    color: #333;
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+    text-indent: 20px;
+}
+
+.circle {
+    width: 25vw;
+    height: 25vw;
+    background-image: url("images/resumepic.JPG");
+    transform: rotate(30deg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+    border: 5px solid #eec7be;
+    margin-right: 2%;
+}
+
+/* circle pic rectangle */
+#rect1 {
+    width: 70vw;
+    height: 33vw;
+    border-radius: 400px;
+    top: 15vw;
+    left: -22vw;
+    transform: rotate(-30deg); 
+    background-color: #eec7be;
+    justify-content: flex-end;
+}
+
+/* text rectangles for headers 2-7 */
+#rect2 {
+    width: 48vw;
+    height: 6vw;
+    top: 8vw;
+    left: 42vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+#rect3 {
+    width: 48vw;
+    height: 6vw;
+    top: 30vw;
+    left: 42vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+#rect4 {
+    width: 48vw;
+    height: 6vw;
+    top: 113vw;
+    left: 42vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+
+}
+
+#rect5 {
+    width: 30vw;
+    height: 6vw;
+    top: 8vw;
+    left: 6vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+#rect6 {
+    width: 30vw;
+    height: 6vw;
+    top: 77vw;
+    left: 6vw;
+    border-radius: 0;
+    position: absolute;
+    background-color: #ffecd8;
+}
+
+#rect7 {
+    width: 30vw;
+    height: 6vw;
+    top: 119vw;
+    left: 6vw;
+    border-radius: 0;
+    position: absolute;
+    background-color: #ffecd8;
+}
+
+#rect8 {
+    width: 25vw;
+    height: 0.5vw;
+    top: 17vw;
+    left: -10vw;
+    transform: rotate(-30deg);
+    background-color: #e2b055;
+    position: absolute;
+}
+
+#rect8, #rect9, #rect10, #rect11, #rect12, 
+#rect13, #rect14, #rect15, #rect16    {
+    position: absolute;
+}
+
+#rect9 {
+    width: 40vw;
+    height: 0.5vw;
+    top: 52vw;
+    left: -6vw;
+    transform: rotate(-30deg);
+    background-color: #e2b055;
+}
+
+#rect10 {
+    width: 35vw;
+    height: 6vw;
+    top: -11vw;
+    left: 68vw;
+    transform: rotate(-40deg);
+    border-radius: 100px;
+    background-color: #e2b055;
+}
+
+#rect11 {
+    width: 85vw;
+    height: 1vw;
+    top: -80vw;
+    left: 80vw;
+    transform: rotate(-40deg);
+    background-color: #e2b055;
+}
+
+#rect12 {
+    width: 40vw;
+    height: 8vw;
+    top: 176vw;
+    left: -10vw;
+    transform: rotate(-45deg);
+    border-radius: 100px;
+    background-color: #e2b055;
+}
+
+#rect13 {
+    width: 85vw;
+    height: 7vw;
+    top: 6vw;
+    left: 70vw;
+    border-radius: 200px;
+    transform: rotate(-40deg);
+    background-color: #eec7be;
+}
+
+#rect14 {
+    width: 25vw;
+    height: 1vw;
+    top: 150vw;
+    left: -15vw;
+    transform: rotate(-45deg);
+    background-color: #eec7be;
+}
+
+#rect15 {
+    width: 45vw;
+    height: 17vw;
+    top: -12vw;
+    left: 78vw;
+    transform: rotate(-40deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
+}
+
+#rect16 {
+    width: 50vw;
+    height: 20vw;
+    top: 147vw;
+    left: -15vw;
+    transform: rotate(-45deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
+}
+
+/* text boxes */
+#rect17 {
+    width: 48vw;
+    height: 20vw;
+    top: 48vw;
+    left: 42vw;
+    position: absolute;
+}
+
+#rect18 {
+    width: 18vw;
+    height: 10vw;
+    top: 122vw;
+    left: 42vw;
+    position: absolute;
+    font-weight: bold; 
+    line-height: 0.8;  
+    text-align: left;
+    text-indent: 0;
+}
+
+#rect19 {
+    width: 48vw;
+    height: 19vw;
+    top: 135vw;
+    left: 42vw;
+    position: absolute;
+    text-indent: 0;
+}
+
+#rect20 {
+    width: 15vw;
+    height: 10vw;
+    top: 77vw;
+    left: 42vw;
+    position: absolute;
+    font-weight: bold; 
+    line-height: 0.8;  
+    text-align: left;
+    text-indent: 0;
+    justify-content: flex-start;
+}
+
+#rect21 {
+    width: 48vw;
+    height: 25vw;
+    top: 90vw;
+    left: 42vw;
+    position: absolute;
+    text-indent: 0;
+}
+
+#rect22 {
+    width: 60vw;
+    height: 3vw;
+    top: 167vw;
+    left: 42vw;
+    position: absolute;
+    font-weight: bold; 
+    line-height: 0.8;  
+    text-align: left;
+    font-size: 1.5vw;
+    text-indent: 0;
+    justify-content: flex-start;
+}
+
+#rect23 {
+    width: 20vw;
+    height: 6vw;
+    top: 170vw;
+    left: 42vw;
+    line-height: 0.8;
+    position: absolute;
+    justify-content: flex-start;
+    text-indent: 0;
+}
+
+#rect24 {
+    width: 30vw;
+    height: 3vw;
+    top: 180vw;
+    left: 42vw;
+    position: absolute;
+    font-weight: bold; 
+    line-height: 0.8;  
+    text-align: left;
+    font-size: 1.5vw;
+    text-indent: 0;
+    justify-content: flex-start;
+}
+
+#rect25 {
+    width: 30vw;
+    height: 6vw;
+    top: 185vw;
+    left: 42vw;
+    position: absolute;
+    line-height: 0.8;
+    text-indent: 0;
+    justify-content: flex-start;
+}
+
+#rect26 {
+    width: 30vw;
+    height: 6vw;
+    top: 68vw;
+    left: 6vw;
+    position: absolute;
+    text-align: center;
+}
+
+#rect27 {
+    width: 20vw;
+    height: 20vw;
+    top: 90vw;
+    left: 10vw;
+    position: absolute;
+}
+
+#rect28 {
+    width: 20vw;
+    height: 6vw;
+    top: 128vw;
+    left: 10vw;
+    position: absolute;
+}
+
+/* Basic styling for the navbar */
+
+.navbar {
+    position: relative;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 2vw;
+    z-index: 1;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #00515b;
+    margin: 4px 0;
+    transition: 0.3s;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    overflow: hidden; /* Ensure content is hidden during transition */
+    height: 0; /* Start with height 0 */
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2cf;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(240, 242, 207, 0.9);
+    transition: height 0.5s ease; /* Animate height */
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+}
+
+.dropdown-menu.show {
+    height: auto; /* Allow content to define height when shown */
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-family: 'Montserrat', sans-serif; /* Apply font-family to links */
+    font-size: 16px; 
+    text-align: center;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #dcf4f7;
+    border-radius: 20px;
+}
+
+
+
+@media (max-width: 768px) {
+    .centered-text, li, a {
+        font-size: vw;
+        flex-basis: calc(100% - 20px);
+    }
+
+    .nameimage, #rect1, #rect2, #rect3, #rect4, #rect5, #rect6, #rect7, 
+    #rect8, #rect9, #rect10, #rect11, #rect12, #rect13, #rect14, #rect15, #rect16,
+    #rect17, #rect18, #rect19, #rect20, #rect21, #rect22, #rect23, #rect24, #rect25,
+    #rect26, #rect27, #rect28 {
+        flex-basis: calc(100% - 20px);
+    }
+}

@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+body {
+    background-color: #dcf4f7;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Flexbox container for carousels */
+.carousel-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+.carousel-container {
+    width: 45%; /* Adjust width as needed */
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Adjust margin and position to stagger carousels */
+#carousel1 {
+    margin-top: 85vw; 
+    margin-left: 5vw;
+}
+
+#carousel2 {
+    margin-top: 6vw; /* Adjust as needed to stagger vertically */
+    margin-right: 4vw; /* Optional: Adjust to stagger horizontally */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-photo {
+    background-size: cover;
+    width: 40vw;
+    height: 40vw;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px 0;
+    position: relative;
+}
+
+.carousel-photo::before {
+    content: '';
+    display: block;
+    padding-top: 56.25%; 
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 95%;
+    width: 58%;
+    left: 9vw;
+    justify-content: space-between;
+}
+
+.carousel-controls button {
+    background-color: transparent;
+    border: none;
+    font-size: 2em;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-dots span {
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #dcf4f7;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot {
+    background-color: #717171;
+}
+
+.modal-container {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: auto;
+}
+
+.modal {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content {
+    width: 100%;
+    height: auto;
+}
+
+.rectangle {
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-right: 2%;
+}
+
+.centered-text {
+    font-size: 1.5vw;
+    color: #333;
+    text-align: center;
+}
+
+ul.no-bullets {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove default padding */
+    margin: 0; 
+}
+
+/* Headers */
+
+#rect1 {
+    top: 12vw;
+    left: 8vw;
+    width: 40vw;
+    height: 6vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+#rect2 {
+    top: 90vw;
+    left: 50vw;
+    width: 40vw;
+    height: 6vw;
+    border-radius: 0;
+    background-color: #ffecd8;
+}
+
+/* Design rectangles */
+#rect3, #rect4, #rect5, #rect6, #rect7, 
+#rect8, #rect9  {
+    position: absolute;
+}
+
+#rect3 {
+    width: 35vw;
+    height: 6vw;
+    top: -5vw;
+    left: 65vw;
+    transform: rotate(-40deg);
+    border-radius: 100px;
+    background-color: #e2b055;
+}
+
+#rect4 {
+    width: 45vw;
+    height: 1vw;
+    top: 7vw;
+    left: 90vw;
+    transform: rotate(-40deg);
+    background-color: #e2b055;
+}
+
+#rect5 {
+    width: 95vw;
+    height: 8vw;
+    top: 190vw;
+    left: 60vw;
+    transform: rotate(45deg);
+    border-radius: 100px;
+    background-color: #e2b055;
+}
+
+#rect6 {
+    width: 65vw;
+    height: 7vw;
+    top: 12vw;
+    left: 87vw;
+    border-radius: 200px;
+    transform: rotate(-40deg);
+    background-color: #eec7be;
+}
+
+#rect7 {
+    width: 95vw;
+    height: 1vw;
+    top: 170vw;
+    left: 85vw;
+    transform: rotate(45deg);
+    background-color: #eec7be;
+}
+
+#rect8 {
+    width: 45vw;
+    height: 17vw;
+    top: -13vw;
+    left: 83vw;
+    transform: rotate(-40deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
+}
+
+#rect9 {
+    width: 95vw;
+    height: 20vw;
+    top: 165vw;
+    left: 65vw;
+    transform: rotate(45deg);
+    border-radius: 200px;
+    background-color: #f0f2cf;
+}
+
+/* text boxes */
+#rect10 {
+    width: 40vw;
+    height: 30vw;
+    top: 22vw;
+    left: 9vw;
+    position: absolute;
+}
+
+#rect11 {
+    width: 40vw;
+    height: 35vw;
+    top: 100vw;
+    left: 51.5vw;
+    position: absolute;
+}
+
+/* SideBar Style */
+
+.navbar {
+    position: relative;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding-left: 2vw;
+    padding-top: 2vw;
+    z-index: 1;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #00515b;
+    margin: 4px 0;
+    transition: 0.3s;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    overflow: hidden; /* Ensure content is hidden during transition */
+    height: 0; /* Start with height 0 */
+    position: absolute;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2cf;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(240, 242, 207, 0.9);
+    transition: height 0.5s ease; /* Animate height */
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+}
+
+.dropdown-menu.show {
+    height: auto; /* Allow content to define height when shown */
+}
+
+.dropdown-menu li {
+    padding: 20px;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-family: 'Montserrat', sans-serif; /* Apply font-family to links */
+    font-size: 16px; 
+    text-align: center;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #dcf4f7;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-controls button {
+        font-size: 1.5em; /* Reduce size of the arrows */
+        padding: 1px; /* Reduce padding */
+    }
+
+    .carousel-dots .dot {
+        height: 1px; /* Reduce size of the dots */
+        width: 1px;
+    }
+}
+
+/* Media Query for very small screens */
+@media screen and (max-width: 480px) {
+    .carousel-controls button {
+        font-size: 1em; /* Further reduce size of the arrows */
+        padding: 1px; /* Further reduce padding */
+    }
+
+    .carousel-dots .dot {
+        height: 1px; /* Further reduce size of the dots */
+        width: 1px;
+    }
+}
