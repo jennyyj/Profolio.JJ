@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Add click event listeners to rectangles
     document.getElementById("shiftgrab").addEventListener("click", function() {
-        window.location.href = "https://www.shiftgrab.com"; // Redirect to ShiftGrab website
+        window.location.href = "https://jennyyj.github.io/ShiftGrab/index.html"; // Redirect to ShiftGrab website
     });
 
     document.getElementById("traveling").addEventListener("click", function() {
