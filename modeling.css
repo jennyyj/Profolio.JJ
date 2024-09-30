@@ -18,20 +18,20 @@ body {
 }
 
 .carousel-container {
-    width: 45%; /* Adjust width as needed */
+    width: 45%; 
     margin-bottom: 20px;
     position: relative;
 }
 
-/* Adjust margin and position to stagger carousels */
+/* margin and position to stagger carousels */
 #carousel1 {
     margin-top: 85vw; 
     margin-left: 5vw;
 }
 
 #carousel2 {
-    margin-top: 6vw; /* Adjust as needed to stagger vertically */
-    margin-right: 4vw; /* Optional: Adjust to stagger horizontally */
+    margin-top: 6vw; 
+    margin-right: 4vw; 
 }
 
 .carousel {
@@ -151,8 +151,8 @@ body {
 }
 
 ul.no-bullets {
-    list-style-type: none; /* Remove bullet points */
-    padding-left: 0; /* Remove default padding */
+    list-style-type: none; 
+    padding-left: 0; 
     margin: 0; 
 }
 
@@ -294,8 +294,8 @@ ul.no-bullets {
 
 /* Dropdown menu styles */
 .dropdown-menu {
-    overflow: hidden; /* Ensure content is hidden during transition */
-    height: 0; /* Start with height 0 */
+    overflow: hidden; /* content is hidden during transition */
+    height: 0; 
     position: absolute;
     width: auto;
     display: flex;
@@ -306,14 +306,14 @@ ul.no-bullets {
     list-style: none;
     border-radius: 5px;
     box-shadow: 0 8px 16px rgba(240, 242, 207, 0.9);
-    transition: height 0.5s ease; /* Animate height */
+    transition: height 0.5s ease; 
     z-index: 1;
     font-family: 'Montserrat', sans-serif;
     border-radius: 20px;
 }
 
 .dropdown-menu.show {
-    height: auto; /* Allow content to define height when shown */
+    height: auto; 
 }
 
 .dropdown-menu li {
@@ -324,7 +324,7 @@ ul.no-bullets {
     text-decoration: none;
     color: #333;
     display: block;
-    font-family: 'Montserrat', sans-serif; /* Apply font-family to links */
+    font-family: 'Montserrat', sans-serif; 
     font-size: 16px; 
     text-align: center;
 }
@@ -336,12 +336,12 @@ ul.no-bullets {
 
 @media screen and (max-width: 768px) {
     .carousel-controls button {
-        font-size: 1.5em; /* Reduce size of the arrows */
-        padding: 1px; /* Reduce padding */
+        font-size: 1.5em; 
+        padding: 1px; 
     }
 
     .carousel-dots .dot {
-        height: 1px; /* Reduce size of the dots */
+        height: 1px; 
         width: 1px;
     }
 }
@@ -349,12 +349,12 @@ ul.no-bullets {
 /* Media Query for very small screens */
 @media screen and (max-width: 480px) {
     .carousel-controls button {
-        font-size: 1em; /* Further reduce size of the arrows */
-        padding: 1px; /* Further reduce padding */
+        font-size: 1em; 
+        padding: 1px; 
     }
 
     .carousel-dots .dot {
-        height: 1px; /* Further reduce size of the dots */
+        height: 1px; 
         width: 1px;
     }
 }
